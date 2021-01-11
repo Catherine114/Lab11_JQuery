@@ -26,14 +26,36 @@ $( document ).ready(function(){
     	});
 
     	$("#wrap").click(function(){
-    		 $(this).wrap('<div class="wrap1" />'); 
+    		$(this).wrap('<div class="wrap1" />'); 
+    	});
+
+		$("#hello").click(function(){
+    		$("#hello").append(document.createTextNode("Hello"));
+    		$("#hello").prepend(document.createTextNode("PHRASE: "));
+
+
+    	});
+
+    	$( ".withSelector" ).click(function(){ 
+	    		$( "*" ).css( "border", "none" ); 
+	    			$( "li" ).filter(".field") 
+		     				 .css( "border", "2px solid green" ); 
     	});
 
 
+		$("#mytab").click(function(){
+    		$("#tab").clone(true).css('color','red').appendTo('body'); 
+    	});
 
+$("#but4").button();
+$(function () {
+      $("#datepicker").datepicker();
+    });
+    $(function () {
+      $("#kvadr").draggable();
+    });
 
-
-
+    $("#accordion").accordion();
 
 
 

@@ -6,12 +6,22 @@ body {
 	margin: 0px;
 }
 
+#kvadr {
+      width: 300px;
+      height: 100px;
+      background-color: yellow;
+      padding: 0.5em;
+    }
+
 .intro {
   font-size: 150%;
   color: red;
 }
 
-.wrap1 p{
+#accordion
+{font-size:0.8em;}
+
+.wrap1 strong{
       color: red; font-weight: 700;
 }
 
