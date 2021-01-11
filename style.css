@@ -6,6 +6,16 @@ body {
 	margin: 0px;
 }
 
+.intro {
+  font-size: 150%;
+  color: red;
+}
+
+.wrap1 p{
+      color: red; font-weight: 700;
+}
+
+
 h1::selection {
 	background-color: #7FFFD4;
 	color: white;

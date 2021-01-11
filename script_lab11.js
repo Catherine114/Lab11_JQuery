@@ -14,11 +14,19 @@ $( document ).ready(function(){
 
     	$("#foto").click(function(){
     		$('.show').after($('<p />')).text('Дата рождения: 4 января 2001г.');
-			$('.secret').before($('<p />')).text('ФИО:');
+			$('.secret').before($('<p />')).text('Мое фото:');
 		});
 
-    	$(".circle").click(function(){
-    		$('.circle').hide().delay(2000).show();
+		$(".fri").click(function(){ 
+	    	console.log($("p").css('color'));
+	  	});
+
+    	$(".fri1").click(function(){
+    		$(this).addClass("intro");
+    	});
+
+    	$("#wrap").click(function(){
+    		 $(this).wrap('<div class="wrap1" />'); 
     	});
 
 
